@@ -1,7 +1,5 @@
 import java.awt.*;  
-import java.awt.event.*;  
-/*********************************************/  
-  
+import java.awt.event.*;    
 public class MyCalculator extends Frame  
 {  
   
@@ -24,8 +22,7 @@ Label memLabel=new Label(" ",Label.RIGHT);
   
 final int FRAME_WIDTH=325,FRAME_HEIGHT=325;  
 final int HEIGHT=30, WIDTH=30, H_SPACE=10,V_SPACE=10;  
-final int TOPX=30, TOPY=50;  
-///////////////////////////  
+final int TOPX=30, TOPY=50; 
 MyCalculator(String frameText)//constructor  
 {  
 super(frameText);  
@@ -48,8 +45,6 @@ memoryButton[i]=new MyMemoryButton(tempX,y,WIDTH,HEIGHT,memoryButtonText[i], thi
 memoryButton[i].setForeground(Color.RED);  
 y+=HEIGHT+V_SPACE;  
 }  
-  
-//set Co-ordinates for Special Buttons  
 tempX=TOPX+1*(WIDTH+H_SPACE); y=TOPY+1*(HEIGHT+V_SPACE);  
 for(int i=0;i<specialButton.length;i++)  
 {  
@@ -68,9 +63,7 @@ digitButton[i]=new MyDigitButton(tempX,y,WIDTH,HEIGHT,digitButtonText[i], this);
 digitButton[i].setForeground(Color.BLUE);  
 tempX+=WIDTH+H_SPACE;  
 if((i+1)%3==0){tempX=digitX; y+=HEIGHT+V_SPACE;}  
-}  
-  
-//set Co-ordinates for Operator Buttons  
+}    
 int opsX=digitX+2*(WIDTH+H_SPACE)+H_SPACE;  
 int opsY=digitY;  
 tempX=opsX;  y=opsY;  
