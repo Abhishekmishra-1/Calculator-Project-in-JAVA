@@ -84,8 +84,7 @@ public void windowClosing(WindowEvent ev)
 setLayout(null);  
 setSize(FRAME_WIDTH,FRAME_HEIGHT);  
 setVisible(true);  
-}  
-//////////////////////////////////  
+}   
 static String getFormattedText(double temp)  
 {  
 String resText=""+temp;  
@@ -93,7 +92,6 @@ if(resText.lastIndexOf(".0")>0)
     resText=resText.substring(0,resText.length()-2);  
 return resText;  
 }  
-////////////////////////////////////////  
 public static void main(String []args)  
 {  
 new MyCalculator("Calculator - Abhishek");  
