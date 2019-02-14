@@ -34,9 +34,7 @@ displayLabel.setForeground(Color.WHITE);
 add(displayLabel);  
   
 memLabel.setBounds(TOPX,  TOPY+HEIGHT+ V_SPACE,WIDTH, HEIGHT);  
-add(memLabel);  
-  
-// set Co-ordinates for Memory Buttons  
+add(memLabel);   
 tempX=TOPX;   
 y=TOPY+2*(HEIGHT+V_SPACE);  
 for(int i=0; i<memoryButton.length; i++)  
