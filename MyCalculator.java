@@ -50,8 +50,6 @@ specialButton[i]=new MySpecialButton(tempX,y,WIDTH*2,HEIGHT,specialButtonText[i]
 specialButton[i].setForeground(Color.RED);  
 tempX=tempX+2*WIDTH+H_SPACE;  
 }  
-  
-//set Co-ordinates for Digit Buttons  
 int digitX=TOPX+WIDTH+H_SPACE;  
 int digitY=TOPY+2*(HEIGHT+V_SPACE);  
 tempX=digitX;  y=digitY;  
