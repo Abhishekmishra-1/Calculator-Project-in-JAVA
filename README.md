@@ -1,1 +1,1 @@
-# Calculator-Project-in-JAVA
+# Scientific-Calculator Project
